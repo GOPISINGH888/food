@@ -7,25 +7,9 @@ const Clr = styled.div`
 `
 const props = props => (
   <div className="container">
-    <div class="columns is-multiline ">
-      <div className="column is-4">
-        <div className="card">
-          <div className="columns">
-            <Clr>
-              <div className="column spaced"></div>
-            </Clr>
-            <div className="column has-text-white-bis has-background-black-bis">
-              <p className="is-size-4 headtext">Lead generation</p>
-              <p className="is-size-6 smalltext">
-                Justo tempor, rutrum erat id, molestieJusto tempor, rutrum erat
-                id, molestieJusto tempor
-              </p>
-              <button className="button is-danger is-rounded">Danger</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <img src={props.img} />
+    <p className="is-size-4 headtext">{props.headtext}</p>
+    <p className="is-size-6 smalltext">{props.smalltext}</p>
   </div>
 )
 export default props
