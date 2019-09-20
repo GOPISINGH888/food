@@ -13,6 +13,7 @@ const Prps = styled.div`
   }
   .smalltext {
     margin-top: 1rem;
+    color: #999999;
   }
   .heading {
     padding-bottom: 1rem;
@@ -29,7 +30,7 @@ const props = props => (
       <p className="is-size-4 headtext has-text-black-bis has-text-weight-bold">
         {props.headtext}
       </p>
-      <p className="is-size-6 smalltext has-text-light-grey has-text-weight-semibold ">
+      <p className="is-size-6 smalltext has-text-weight-semibold ">
         {props.smalltext}
       </p>
     </Prps>
