@@ -12,9 +12,6 @@ const Containor = styled.div`
     color: #999999;
     margin-top: 20px;
   }
-  .top {
-    margin-top: 6rem;
-  }
   .gap {
     margin-top: 2rem;
   }
@@ -33,9 +30,7 @@ export default () => (
           No third-party plugins required, no extra costs. Lafka offers <br />
           tailor made features you won’t find in another theme.
         </p>
-        <p className="has-text-black-bis is-size-2 has-text-weight-bold top">
-          CUSTOMIZABLE PRODUCTS
-        </p>
+        <Props heading="CUSTOMIZABLE PRODUCTS" />
       </div>
       <div className="columns has-text-centered is-variable is-8 gap">
         <div className="column">

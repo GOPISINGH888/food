@@ -14,17 +14,22 @@ const Prps = styled.div`
   .smalltext {
     margin-top: 1rem;
   }
+  .heading {
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+  }
 `
 const props = props => (
   <div className="container">
     <Prps>
-      <div>
-        <img className="zoom" src={props.img} />
-      </div>
-      <p className="is-size-4 headtext has-text-black-bis has-text-weight-bold is-size-4">
+      <h1 className="heading is-size-1 has-text-black-bis has-text-weight-bold">
+        {props.heading}
+      </h1>
+      <img className="zoom" src={props.img} />
+      <p className="is-size-4 headtext has-text-black-bis has-text-weight-bold">
         {props.headtext}
       </p>
-      <p className="is-size-6 smalltext has-text-light-grey has-text-weight-semibold is-size-6">
+      <p className="is-size-6 smalltext has-text-light-grey has-text-weight-semibold ">
         {props.smalltext}
       </p>
     </Prps>
