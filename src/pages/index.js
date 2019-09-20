@@ -1,10 +1,10 @@
 import React from "react"
 import Banner from "../components/Banner"
-import Multiline from "../components/Multiline"
+import Cards from "../components/Cards"
 
 export default () => (
   <div>
     <Banner />
-    <Multiline />
+    <Cards />
   </div>
 )

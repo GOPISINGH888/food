@@ -1,15 +1,33 @@
 import React from "react"
 import styled from "styled-components"
-const Maargin = styled.div``
-const Clr = styled.div`
-  color: red;
-  background-color: red;
+const Prps = styled.div`
+  .zoom {
+    transition: transform 0.2s;
+    margin: 0 auto;
+  }
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+  .headtext {
+    margin-top: 1rem;
+  }
+  .smalltext {
+    margin-top: 1rem;
+  }
 `
 const props = props => (
   <div className="container">
-    <img src={props.img} />
-    <p className="is-size-4 headtext">{props.headtext}</p>
-    <p className="is-size-6 smalltext">{props.smalltext}</p>
+    <Prps>
+      <div>
+        <img className="zoom" src={props.img} />
+      </div>
+      <p className="is-size-4 headtext has-text-black-bis has-text-weight-bold is-size-4">
+        {props.headtext}
+      </p>
+      <p className="is-size-6 smalltext has-text-light-grey has-text-weight-semibold is-size-6">
+        {props.smalltext}
+      </p>
+    </Prps>
   </div>
 )
 export default props
