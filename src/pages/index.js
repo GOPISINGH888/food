@@ -5,6 +5,7 @@ import Singlecard from "../components/Singlecard"
 import Multicards from "../components/Multicards"
 import Sixcolumns from "../components/Sixcolumns"
 import Fivecolumns from "../components/Fivecolumns"
+import Footer from "../components/Footer"
 
 export default () => (
   <div>
@@ -14,5 +15,6 @@ export default () => (
     <Multicards />
     <Sixcolumns />
     <Fivecolumns />
+    <Footer />
   </div>
 )
